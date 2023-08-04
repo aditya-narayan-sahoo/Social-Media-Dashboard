@@ -89,7 +89,8 @@ main {
   transform: translateY(-4rem);
 }
 
-.upper-container {
+.upper-container,
+.lower-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +98,8 @@ main {
   gap: 1.8rem;
 }
 
-.card {
+.card,
+.small-card {
   width: 90%;
   background-color: hsl(228, 28%, 20%);
   padding: 2rem 0;
@@ -108,7 +110,8 @@ main {
   transition: background-color .2s ease-in-out;
 }
 
-.card:hover {
+.card:hover,
+.small-card:hover {
   background-color: hsla(228, 34%, 66%, .45);
 }
 
@@ -184,4 +187,50 @@ main {
 .diff-up,
 .diff-down {
   font-size: 1.4rem;
+}
+
+.sub-title {
+  color: hsl(0, 0%, 100%);
+  margin: 2rem 0 2rem 2rem;
+  font-size: 1.9rem;
+}
+
+.small-card {
+  padding: 2rem;
+}
+
+.first-line,
+.last-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.card-text {
+  color: hsl(228, 34%, 66%);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.num {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+}
+
+.percent-down,
+.percent-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  font-size: 1.4rem;
+}
+
+.percent-down {
+  color: hsl(356, 69%, 56%);
+}
+
+.percent-up {
+  color: hsl(163, 72%, 41%);
 }
