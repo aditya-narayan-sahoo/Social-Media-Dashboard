@@ -243,10 +243,68 @@ footer {
   font-size: 1.4rem;
 }
 
+.line-one,
+.line-two {
+  display: block;
+
+}
+
 footer a {
   color: hsl(0, 0%, 100%);
 }
 
 footer a:hover {
   color: hsl(203, 89%, 53%);
+}
+
+@media (min-width: 600px) {
+
+  .upper-container,
+  .lower-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    width: 100%;
+    padding: 2rem 0 6rem;
+  }
+
+  .heading {
+    max-width: 110rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .toggle-btn {
+    border-top: none;
+    gap: 2rem;
+  }
+
+  main {
+    max-width: 110rem;
+    margin: auto;
+  }
+
+  .upper-container,
+  .lower-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .card,
+  .small-card {
+    width: 100%;
+  }
+
+  .line-one,
+  .line-two {
+    display: inline-block;
+  }
 }
