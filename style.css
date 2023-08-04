@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(230, 17%, 14%);
+}
+
+header {
+  background-color: hsl(232, 19%, 15%);
+  padding: 2rem 2rem 6rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: .69rem;
+}
+
+.text {
+  font-size: 1.4rem;
+  margin-bottom: 1.7rem;
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 2rem 0;
+  border-top: 1px solid hsl(228, 12%, 44%);
+}
+
+.mode {
+  color: hsl(228, 34%, 66%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+input {
+  width: 4rem;
+  height: 2rem;
+  background: linear-gradient(94deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  appearance: none;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+
+}
+
+input::before {
+  content: '';
+  background-color: hsl(228, 28%, 20%);
+  position: absolute;
+  left: 2px;
+  top: 45%;
+  transform: translateY(-45%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+input:checked::before {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background-color: hsl(227, 47%, 96%);
+}
