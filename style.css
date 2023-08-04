@@ -234,3 +234,19 @@ main {
 .percent-up {
   color: hsl(163, 72%, 41%);
 }
+
+footer {
+  text-align: center;
+  color: hsl(228, 34%, 66%);
+  padding: 0 2rem;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: hsl(0, 0%, 100%);
+}
+
+footer a:hover {
+  color: hsl(203, 89%, 53%);
+}
