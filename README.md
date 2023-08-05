@@ -27,10 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshots\desktop-dark.png)
-![](screenshots\desktop-light.png)
-![](screenshots\mobile-dark.jpg)
-![](screenshots\mobile-light.jpg)
+![](screenshots/desktop-dark.png)
+![](screenshots/desktop-light.png)
+![](screenshots/mobile-dark.jpg)
+![](screenshots/mobile-light.jpg)
 
 ### Links
 
